@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Programming Languages Guide</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=yes">
+	<link rel="stylesheet" href="../CSS/style.css" type="text/css">
+
+ <script type="text/javascript">
+
+ 	 //Function to collapse/show contents
+	function toggleText(a){
+		var e=document.getElementById(a);
+		if(!e)return true;
+		if(e.style.display=="none")
+		{
+			e.style.display="block"
+		}
+		else
+		{
+			e.style.display="none"
+		}
+		return true;
+	}
+	
+	function responsiveTopNav() 
+	{
+		var x = document.getElementById("topNav");
+		if (x.className === "nav") 
+		{
+			x.className += " responsive";
+		} 
+		else 
+		{
+			x.className = "nav";
+		}
+	}
+	
+
+ </script>
+
+  
+</head>
+<body>
+<div class="container">
+		<div class = "nav" id="topNav">
+			<a href="./index.html">Home</a>
+			
+			<a href="./csharp/getting_started_with_unity.html">C#</a>
+			
+			<a href="./javascript/getting_started_with_phaser.html">JavaScript</a>
+
+			<a href="./next_step.html">Next Step</a>
+			
+			<a href="./help_and_tips.html">Help and Tips</a>
+			
+			<a href="./feedback.html">Feedback</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()">&#9776;</a>
+			
+		</div>
+		
+	
+		<br>
+		<input type="button" class="button" onclick="return toggleText('C#Fundamentals')" value="Basic C# fundamentals" >
+		<div id="C#Fundamentals" style="display:none"><br>
+			<input type="button" class="button" onclick="return toggleText('C#Fundamentals1')" value="1. Data types in C#">
+			<div id="C#Fundamentals1" style="display:none">
+			<br><p>Below are some of the basic <strong>data types</strong> used in C#</p>
+			<ul>
+				<li><strong>bool:</strong> True or False. e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+bool isAlive =true;
+</textarea><br><br>
+
+				<li><strong>double:</strong>  64-bit double-percision floating point type e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+double num = 99999;
+</textarea><br><br>
+
+<li><strong>float:</strong> 64-bit single-percision floating point type. e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+float num = 12.99f;
+</textarea><br><br>
+
+<li><strong>int:</strong> This is any whole number e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+int age = 22;
+</textarea><br><br>	
+
+<li><strong>char:</strong> This is any single character, digit, or punctuation mark e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+char gender = 'M';
+</textarea>
+<p>(Always remember when declaring <strong>char</strong> variables you must use <strong>' '</strong>)</p>
+
+
+<li><strong>String:</strong> Sequence of characters such as letters, digits or punctuation marks. e.g.</li><br>
+<textarea id="JS_textarea3" readonly>
+String message = '!!I like coding!!';
+</textarea>
+<p>(Always remember when declaring <strong>String</strong> variables you must use <strong>" "</strong> 
+and for char variables you must use <strong>' '</strong>)</p>
+				
+</ul>
+		</div>
+		
+		<br><br><input type="button" class="button" onclick="return toggleText('C#Fundamentals2')" value="2. Variables">
+				<div id="C#Fundamentals2" style="display:none"><br>
+
+				<ul>
+					<li><strong>Variables</strong> are containers for storing data values. For example</li><br>
+<textarea id="JS_textarea2" readonly>
+int age = 22;
+</textarea>
+					<p>In this case variable <strong>age</strong> stores the value <strong>22</strong>.</p>
+			
+				</ul>
+				</div>
+				
+				
+		<br><br><input type="button" class="button" onclick="return toggleText('C#Fundamentals3')" value="3. Operators">
+		<div id="C#Fundamentals3" style="display:none"><br>
+				
+			<p><strong>Arithmetic Operators</strong></p>
+			<table>
+				<tr>
+					<td>Addition</td>
+					<td>+</td>
+					<td><img src="../Images/Plus.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Subtraction</td>
+					<td>-</td>
+					<td><img src="../Images/Minus.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Multiplication</td>
+					<td>*</td>
+					<td><img src="../Images/Multi.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Division</td>
+					<td>/</td>
+					<td><img src="../Images/Div.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Increment</td>
+					<td>++</td>
+				</tr>
+				<tr>
+					<td>Decrement</td>
+					<td>--</td>
+				</tr>
+				<tr>
+					<td>Remainder</td>
+					<td>%</td>
+				</tr>
+			</table><br>
+				
+			<p><strong>Comparsion Operators</strong></p>
+			<table>
+				<tr>
+					<td>Equal</td>
+					<td>==</td>
+					<td><img src="../Images/Equal.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Not equal</td>
+					<td>!=</td>
+				</tr>
+				<tr>
+					<td>Greater than</td>
+					<td>></td>
+					<td><img src="../Images/Greater.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Greater than or equal to</td>
+					<td>>=</td>
+				</tr>
+				<tr>
+					<td>Less than</td>
+					<td><</td>
+					<td><img src="../Images/Less.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Less than or equal to</td>
+					<td><=</td>
+				</tr>
+			</table><br>
+				
+			<p><strong>Logical Operators</strong></p>
+			<table>
+				<tr>
+					<td>Logical AND</td>
+					<td>&&</td>
+					<td><img src="../Images/AND.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Logical OR</td>
+					<td>||</td>
+					<td><img src="../Images/OR.png" alt="Operators"></td>
+				</tr>
+				<tr>
+					<td>Logical NOT</td>
+					<td>!</td>
+					<td><img src="../Images/NOT.png" alt="Operators"></td>
+				</tr>
+			</table>
+			</div>
+			
+			
+			<br><br><input type="button" class="button" onclick="return toggleText('C#Fundamentals4')" value="4. Loops">
+			<div id="C#Fundamentals4" style="display:none"><br>
+				
+					<p>A <b>loop</b> is used to tell the computer to do something more than once. 
+					In Scratch, you may have come across the following loop blocks.</p>
+					<img src="../Images/Loop_Scratch.png" alt="LoopScratch">	
+				
+				
+			
+					<p>How do we do this in C#?</p>
+					<p>In C#, the common types of loops you will use are: <Strong>while</Strong> loop, <Strong>do-while</Strong> loop and <Strong>for</Strong> loop.</p>
+					<li>Click <a href="http://www.completecsharptutorial.com/basic/while-loop">here</a> to see an example of the <strong>while loop</strong> in C#.</li><br>
+					<li>Click <a href="http://www.completecsharptutorial.com/basic/do-while-loop">here</a> to see an example of the <strong>do-while loop</strong> in C#.</li><br>
+					<li>Click <a href="http://www.completecsharptutorial.com/basic/for-loop">here</a> to see an example of the <strong>for loop</strong> in C#.</li>	
+				
+				
+			</div><br><br>		
+			
+			
+				<input type="button" class="button" onclick="return toggleText('C#Fundamentals5')" value="5. Arrays" >
+				<div id="C#Fundamentals5" style="display:none;clear: both;"><br>
+					<p><strong>Arrays</strong> in C# allows you to stores multiple values in a single variable.</p>
+					<p>There are two kinds of arrays, fixed length and dynamic.</p>
+					<li>To declare a fixed length array</li><br>
+<textarea id="cs_fixedarray" readonly>
+String[] name = new String[10];
+</textarea><br><br>
+				<li>To declare a dynamic array</li><br>
+<textarea id="cs_DynamicArray" readonly>
+String[] name;
+</textarea><br><br>
+				</div><br><br>
+			</div><br><br>
+			
+			<input type="button" class="button" onclick="return toggleText('JavaScriptFundamentals')" value="Basic JavaScript fundamentals" >
+			<div id="JavaScriptFundamentals" style="display:none"><br>
+			
+				<input type="button" class="button" onclick="return toggleText('JSFundamentals1')" value="1. Data types in JavaScript">
+				<div id="JSFundamentals1" style="display:none">
+					<br><p>Below are some of the basic <strong>data types</strong> used in JavaScript</p>
+				<ul>
+			
+					<li><strong>Boolean:</strong> True or False. e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+var isLoggedIn = false;
+</textarea>
+			
+				<br><br>
+				<li><strong>String:</strong> Sequence of characters such as letters, digits or punctuation marks. e.g.</li><br>
+<textarea id="JS_textarea3" readonly>
+var message = '!!I like coding!!';
+</textarea>
+<p>Always remember when declaring String variables you must use <strong>" "</strong> or <strong>' '</strong></p>
+			
+				<li><strong>Number:</strong> Integer or floating-point values like 0 or 15.32. e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+var price = 1.23;
+</textarea>		
+			
+			</ul>
+		</div><br><br>
+		
+		<input type="button" class="button" onclick="return toggleText('JSFundamentals2')" value="2. Variables">
+		<div id="JSFundamentals2" style="display:none">
+			<br><ul>
+				<li><strong>Variables</strong> are containers for storing data values. When declaring a variable we use the keyword <strong>var</strong>. e.g.</li><br>
+<textarea id="JS_textarea2" readonly>
+var name = 'Joe';
+</textarea>
+				<p>In this case variable <strong>name</strong> stores the value <strong>Joe</strong>.</p>
+			</ul>
+		</div><br><br>
+		
+		
+		<input type="button" class="button" onclick="return toggleText('JSFundamentals3')" value="3. Operators">
+		<div id="JSFundamentals3" style="display:none">
+			<br><p><strong>Arithmetic Operators</strong></p>
+				<table>
+					<tr>
+						<td>Addition</td>
+						<td>+</td>
+						<td><img src="../Images/Plus.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Subtraction</td>
+						<td>-</td>
+						<td><img src="../Images/Minus.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Multiplication</td>
+						<td>*</td>
+						<td><img src="../Images/Multi.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Division</td>
+						<td>/</td>
+						<td><img src="../Images/Div.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Increment</td>
+						<td>++</td>
+					</tr>
+					<tr>
+						<td>Decrement</td>
+						<td>--</td>
+					</tr>
+					<tr>
+						<td>Remainder</td>
+						<td>%</td>
+					</tr>
+				</table><br>
+				
+				<p><strong>Comparsion Operators</strong></p>
+				<table>
+					<tr>
+						<td>Equal</td>
+						<td>===</td>
+						<td><img src="../Images/Equal.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Not equal</td>
+						<td>!==</td>
+					</tr>
+					<tr>
+						<td>Greater than</td>
+						<td>></td>
+						<td><img src="../Images/Greater.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Greater than or equal to</td>
+						<td>>=</td>
+					</tr>
+					<tr>
+						<td>Less than</td>
+						<td><</td>
+						<td><img src="../Images/Less.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Less than or equal to</td>
+						<td><=</td>
+					</tr>
+				</table><br>
+				
+				<p><strong>Logical Operators</strong></p>
+				<table>
+					<tr>
+						<td>Logical AND</td>
+						<td>&&</td>
+						<td><img src="../Images/AND.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Logical OR</td>
+						<td>||</td>
+						<td><img src="../Images/OR.png" alt="Operators"></td>
+					</tr>
+					<tr>
+						<td>Logical NOT</td>
+						<td>!</td>
+						<td><img src="../Images/NOT.png" alt="Operators"></td>
+					</tr>
+				</table><br>
+		</div><br><br>	
+		
+		<input type="button" class="button" onclick="return toggleText('JSFundamentals4')" value="4. If / Else Statements">
+		<div id="JSFundamentals4" style="display:none">
+			<br><p><b>IF / Else statements</b> are used to perform different actions based on different decisions.</p>
+			<div class="imgSizeBySize">
+				<p>In <b>Scratch</b>, a simple if/else statement may look at this</p>
+				<img src="../Images/Simple_IF_Scratch.png" alt="IfScratch">
+			</div>
+			
+			<div class="imgSizeBySize">
+				<p>How do we do this in <b>JavaScript</b>?</p>
+	
+<textarea id="JS_textarea4" readonly>
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="result"></p>
+
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+    document.getElementById("result").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>
+</textarea>
+		</div><br><br>
+		</div><br><br>
+		
+		<input type="button" class="button" onclick="return toggleText('JSFundamentals5')" value="5. Loops">
+		<div id="JSFundamentals5" style="display:none">
+			<br><p>A <b>loop</b> is used to tell the computer to do something more than once.</p> 
+			<p>In <b>Scratch</b>, you may have come across the following loop blocks</p>
+			<img src="../Images/Loop_Scratch.png" alt="LoopScratch">
+			
+			<p>How do we do this in <b>JavaScript</b>?</p>
+			<p>In <b>JavaScript</b>, the two common types of loops you will use are: <strong>for</strong> and <strong>while</strong>.</p>
+			<p>A <strong>for</strong> loop is used when you know in advance how many times the script should perform.</p>
+			<li>Click <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for">here</a> to see an example of the <strong>for loop</strong> in JavaScript.</li>
+			<p>A <strong>while</strong> loop is used when you want the loop to continue until a certain condition becomes true.</p>
+			<li>Click <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_while">here</a> to see an example of the <strong>while loop</strong> in JavaScript.</li>
+
+		</div><br><br>
+		
+		
+		<input type="button" class="button" onclick="return toggleText('JSFundamentals6')" value="6. Arrays">
+		<div id="JSFundamentals6" style="display:none">
+		
+			<br><p><strong>Arrays</strong> in JavaScript allows you to stores multiple values in a single variable.</p>
+			<p>To create an array in JavaScript</p>
+<textarea id="JS_textarea3" readonly>
+var animal = ['Cat','Dog','Rabbit'];
+</textarea>
+		</div>
+		</div><br><br>
+	
+			
+		<input type="button" class="button" onclick="return toggleText('Tutorials')" value="Tutorials/Useful Resources">
+		<div id="Tutorials" style="display:none">
+			<p>Below are useful websites/videos that will help you learn and understand more about C# and JavaScript.</p>
+			
+			<h3>C#</h3>
+			<ul>
+				<li><a href="http://www.completecsharptutorial.com/basic/getting-started/">Complete C# Tutorials</a></li>
+				<li><a href="https://www.youtube.com/watch?v=0p0JLFZj2C8&list=PLGLfVvz_LVvRX6xK1oi0reKci6ignjdSa">C# Tutorials (Youtube Videos) by Derek Banas</a></li>
+				
+			</ul>
+		
+		
+			<h3>JavaScript</h3>
+			<ul>
+				<li><a href="https://www.w3schools.com/js/">W3Schools (Javascript)</a></li>
+				<li><a href="http://htmldog.com/guides/javascript/beginner/">JavaScript Beginner Tutorials</a></li>
+				<li><a href="https://www.youtube.com/watch?v=_cLvpJY2deo&list=PLBA965A22D89CF13B">JavaScript Tutorials (Youtube Videos) by Derek Banas</a></li>
+				
+			</ul>
+			
+			<h3>Phaser</h3>
+			<ul>
+				<li><a href="https://phaser.io/learn/official-tutorials">Phaser Tutorials </a></li>
+				<li><a href="https://videlais.com/2015/08/28/phaserfriday-phaser-basics-input-and-arcade-physics/">
+				Phaser Basics Input and Arcade Physics </a></li>
+				
+			
+			</ul>
+		
+			<h3>Unity</h3>
+			<ul>
+				<li><a href="https://unity3d.com/learn/tutorials">Unity Tutorials</a></li>
+			</ul>
+			
+			<h3>Visual Studio Code Guide</h3>
+			<ul>
+				<li><a href="https://code.visualstudio.com/docs">Visual Studio Code documents</a></li>
+			</ul>
+		</div>
+		
+		<div id="back-top">
+			<a href="#"> <img src="../Images/uparrow.png" alt="uparrow" </a>
+		</div>
+</div>
+<script>
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top .uparrow').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
+</script>
+
+
+</body>
+
+</html>

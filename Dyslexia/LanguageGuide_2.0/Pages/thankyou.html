@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Survey Application</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=yes">
+	<link rel="stylesheet" href="../CSS/style.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+ <style type="text/css" >
+ 
+ h1{
+ text-align:center;
+
+ }
+
+ 
+
+ </style>
+	
+</head>
+
+<script type="text/javascript">
+
+/***************************************************************************************
+*    Title: <submit web page form data to a google spreadsheet>
+*    Author: <Mike Heavers>
+*    Date: <18/12/2013>
+*    Availability: <http://mikeheavers.com/tutorials/submitting_custom_form_data_to_a_google_spreadsheet_with_javascript/>
+*
+***************************************************************************************/
+	
+		//getting data from session storage
+		var fb = sessionStorage.getItem("comments");
+		
+		
+		var fbID = "entry.441429446"; 
+		
+		
+		//sending data to google sheet
+		var url = 'https://docs.google.com/forms/d/e/1FAIpQLSdLrZybyNBQqUX0ViQ6c5y7Hphy0nW_h-0a162K8qo4q5P-PQ/formResponse';
+
+		var submitRef = '&submit=4241817340131762826';
+		var submitURL = (fbID + "=" + fb + submitRef);
+		
+		 console.log(submitURL);
+		 //jQuery(this)[0].action = submitURL;
+		
+		
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST",url,true);
+		
+		$.ajax({
+					url: url,
+                    data: submitURL,
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function() {
+                            //Success message
+                        },
+                        200: function() {
+                            //Success Message
+                        }
+                    }
+                });
+				
+		
+	function responsiveTopNav() 
+	{
+		var x = document.getElementById("topNav");
+		if (x.className === "nav") 
+		{
+			x.className += " responsive";
+		} 
+		else 
+		{
+			x.className = "nav";
+		}
+	}
+	
+
+		
+</script>
+ 
+<body>
+<form name="TutorialFeedback" action="" method="POST">
+<div class="container">
+		<div class = "nav" id="topNav">
+		
+			<a href="./index.html">Home</a>
+			
+			<a href="./csharp/getting_started_with_unity.html">C#</a>
+			
+			<a href="./javascript/getting_started_with_phaser.html">JavaScript</a>
+
+			<a href="./next_step.html">Next Step</a>
+			
+			<a href="./help_and_tips.html">Help and Tips</a>
+			
+			<a href="./feedback.html">Feedback</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()">&#9776;</a>
+		</div>
+		<h1>Thank you for your valuable feedback!</h1>
+
+		<!--https://docs.google.com/spreadsheets/d/1TXDQmByHYzFDAdm_ErCMM57ACGrxOOUOAXqd0OkaZUk/edit?usp=sharing-->
+
+	</form>	
+</body>
+
+</html>

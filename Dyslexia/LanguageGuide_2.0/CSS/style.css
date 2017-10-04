@@ -1,0 +1,332 @@
+ html{ 
+	font-size:100%; 
+ }
+ 
+body{
+	display:block;
+	background-color: #e6e6fa;
+}
+
+ 
+body,input,button{
+	font-family: "Arial" ,sans-serif;  
+}
+.container{
+	 margin: 10px 50px 10px 50px;
+}
+
+/*styling on menu links*/
+
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Hide the link that should open and close the nav on small screens */
+.nav .icon {
+    display: none;
+}
+
+
+
+/*responsive nav*/
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+a{
+	color:blue;
+}
+
+
+/*styling on images*/
+img{
+	max-width:100%;
+	max-height:100%;
+}
+
+.imgSizeBySize {
+	width: 45%;
+	display: inline-block;
+	float: left;
+	padding: 0 10px;
+}
+.imgContainer{
+	width: 30%;
+	display: inline-block;
+	float: left;
+	padding: 0 10px;
+}
+
+p{
+	font-size:16px;
+	font-family: "Arial" ,sans-serif;
+	
+}
+
+/*text area styling*/
+
+#dotnet1_textarea{
+	width:100%;
+	max-width:300px;
+	resize:none;
+	
+}
+#JS_textarea1{
+	resize: none;
+	overflow: hidden;
+	width:500px;
+	height: 300px;
+	line-height: 13px;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	
+}
+
+#JS_textarea2{
+	width:100%;
+	max-width:200px;
+	resize:none;
+	
+}
+
+#JS_textarea3{
+	width:100%;
+	max-width:300px;
+	resize:none;
+	
+	 
+}
+#JS_HW_textarea{
+
+    overflow: hidden;
+	width:100%;
+	max-width:650px;
+	min-height:550px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif; 
+}
+
+#JSHelloWorld_txtarea{
+    overflow: hidden;
+	width:100%;
+	max-width:600px;
+	min-height:400px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif; 
+}
+#phaser_canvas_textarea{
+	resize: none;
+    overflow: hidden;
+	width:600px;
+    min-height: 500px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+#phaser_addimage_textarea{
+	resize: none;
+    overflow: hidden;
+	width:300px;
+    min-height: 200px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif;
+	
+}
+
+#JS_AddText_txtarea{
+    overflow: hidden;
+	width:100%;
+	max-width:600px;
+	min-height:150px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif; 
+}
+
+#JS_movement_textarea{
+	overflow: hidden;
+	width:100%;
+	max-width:400px;
+	min-height:350px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif;	
+}
+
+#JS_complete_code_textarea{
+	overflow: hidden;
+	width:100%;
+	max-width:600px;
+	min-height:800px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+
+#JS_textarea4{
+	width:100%;
+	min-height:400px;
+	max-width:500px;
+
+}
+
+#phaser_textarea1{
+	resize: none;
+    overflow: hidden;
+	width:700px;
+    min-height: 300px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+
+#phaser_textarea2{
+	resize: none;
+    overflow: hidden;
+	width:700px;
+    min-height: 400px;
+    line-height: 13px;
+    font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+
+#movement_textara1{
+	resize: none;
+	overflow: hidden;
+	width:600px;
+	height: 450px;
+	max-width: 100%;
+	line-height: 13px;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+
+#Collision_textarea1{
+	resize: none;
+	overflow: hidden;
+	width:300px;
+	height: 200px;
+	line-height: 13px;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+#cs_fixedarray{
+	width:100%;
+	max-width:250px;
+	resize:none;
+}
+#cs_DynamicArray{
+	width:100%;
+	max-width:150px;
+	resize:none;
+	
+}
+
+
+table, th, td {
+    border: 1px solid black;
+	text-align:center;
+	width: 20%;
+}
+
+#back-top {
+	position: fixed;
+	bottom:20px;
+	right: 2%;
+	z-index: 100; }
+	
+/*styling on comment box*/
+textarea.html-text-box {
+	background-color:#ffffff;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	border-width:1;border-style:solid;
+	border-color:#cccccc;
+	font-family:Arial;
+	font-size:14pt;color:#000000;
+}
+
+input.html-text-box {
+	background-color:#ffffff;
+	font-family:Arial;
+	font-size:14pt;
+	color:#000000;
+}
+
+/*styling on buttons*/
+.button {
+	padding: 15px 25px;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: black;
+	background-color: #FFFF66;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	text-decoration: none;
+	max-width: 100%;
+	position:relative;
+	white-space: normal;
+
+}
+
+.button:hover {
+	background-color: #FFCC00}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+
+
+
+ 
+ 
